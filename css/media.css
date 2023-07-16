@@ -2,8 +2,7 @@
 @media screen and (max-width : 576px) {
     nav, 
     .quick-list-container,
-    .feature-section,
-    .fact-container
+    .feature-section
     {
         flex-direction: column;
         gap: 10px;
@@ -20,14 +19,14 @@
     nav ul{
         gap: 10px;
     }
-    main{
+    main, footer{
         width: 90%;
         margin: auto;
     }
     .quick-list-container{
         flex-direction: column-reverse;
     }
-    .team-photos{
+    .team-photos, .fact-container{
         width: 100%;
         grid-template-columns:1fr;
     }
@@ -44,6 +43,7 @@
         font-size: 2.5rem;
     }
     
+    
 }
 
 
@@ -54,20 +54,21 @@
     }
     nav, 
     .quick-list-container,
-    .feature-section,
-    .fact-container
+    .feature-section
     {
         flex-direction: column;
         gap: 20px;
     }
-    main{
+    main, footer{
         width: 90%;
         margin: auto;
     }
     .team-photos, .quick-list-content, .feature-content{
         width: 100%;
     }
-    .feature-items{
+    .feature-items,
+    .fact-container
+    {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
