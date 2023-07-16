@@ -1,6 +1,10 @@
 /* for mobile devices */
 @media screen and (max-width : 576px) {
-    nav, #quick-list-container, #feature-section {
+    nav, 
+    .quick-list-container,
+    .feature-section,
+    .fact-container
+    {
         flex-direction: column;
         gap: 10px;
     }
@@ -20,7 +24,7 @@
         width: 90%;
         margin: auto;
     }
-    #quick-list-container{
+    .quick-list-container{
         flex-direction: column-reverse;
     }
     .team-photos{
@@ -36,6 +40,9 @@
         padding: 20px;
         margin: auto;
     }
+    .badge-title{
+        font-size: 2.5rem;
+    }
     
 }
 
@@ -46,8 +53,9 @@
         padding: 20px;
     }
     nav, 
-    #quick-list-container,
-    #feature-section
+    .quick-list-container,
+    .feature-section,
+    .fact-container
     {
         flex-direction: column;
         gap: 20px;
@@ -71,6 +79,9 @@
         margin: auto;
         bottom: 50px;
         padding: 20px 50px;
+    }
+    .fact-section{
+        margin-top: 900px;
     }
     
 }
