@@ -1,6 +1,9 @@
 /* for mobile devices */
 @media screen and (max-width : 576px) {
-    /* header section */
+    nav, #quick-list-container, #feature-section {
+        flex-direction: column;
+        gap: 10px;
+    }
     header{
         padding: 5px;
     }
@@ -8,27 +11,32 @@
         font-size: 3.5rem;
     }
     nav{
-        flex-direction: column;
         gap: 20px;
     }
     nav ul{
         gap: 10px;
     }
-    /* quick-list section */
     main{
         width: 90%;
         margin: auto;
     }
     #quick-list-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .team-photos{
         width: 100%;
         grid-template-columns:1fr;
     }
-    .quick-list-content{
+    .quick-list-content, .feature-content{
         width: 100%;
     }
+    .badge{
+        bottom: 50px;
+        right: 0;
+        padding: 20px;
+        margin: auto;
+    }
+    
 }
 
 
@@ -37,23 +45,32 @@
     header{
         padding: 20px;
     }
-    nav{
+    nav, 
+    #quick-list-container,
+    #feature-section
+    {
         flex-direction: column;
         gap: 20px;
     }
-    /* quick-list section */
     main{
         width: 90%;
         margin: auto;
     }
-    #quick-list-container{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .team-photos{
+    .team-photos, .quick-list-content, .feature-content{
         width: 100%;
     }
-    .quick-list-content{
-        width: 100%;
+    .feature-items{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
+    .feature-img{
+        height: 40vh;
+    }
+    .badge{
+        right: 0;
+        margin: auto;
+        bottom: 50px;
+        padding: 20px 50px;
+    }
+    
 }
